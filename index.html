@@ -119,17 +119,17 @@
           </div>
           <div class="col-md-4 mb-3">
             <div class="card">
-              <img src="Gallery/3.jpg" class="card-img-top" alt="Gallery 1" />
+              <img src="Gallery/Pasangan.jpg" class="card-img-top" alt="Gallery 1" />
               <div class="card-body">
-                <p class="card-text">Babah Kuala Beach, Mon Ikeun, Kec. Lhoknga, Kabupaten Aceh Besar, Aceh.</p>
+                <p class="card-text">UKCC SABANG, Jl. H. Agus Salim, Ie Meule, Ujong Kareung, Kec. Sukajaya, Kota Sabang, Aceh.</p>
               </div>
             </div>
           </div>
           <div class="col-md-4 mb-3">
             <div class="card">
-              <img src="Gallery/4.jpg" class="card-img-top" alt="Gallery 1" />
+              <img src="Gallery/Sahabat.jpg" class="card-img-top" alt="Gallery 1" />
               <div class="card-body">
-                <p class="card-text">Indomaret Soekarno-Hatta 2, Jl. Soekarno-Hatta Desa Lambheu Kec. Darul Imarah, Lam Ara, Banda Raya, Aceh Besar, Aceh.</p>
+                <p class="card-text">Perumahan Sidomulyo, Jln Merak X, Kec. Perhentianmarpoyan, Kel. MAharatu, Kota Pekanbaru, Riau.</p>
               </div>
             </div>
           </div>
@@ -143,9 +143,9 @@
           </div>
           <div class="col-md-4 mb-3">
             <div class="card">
-              <img src="Gallery/6.jpg" class="card-img-top" alt="Gallery 1" />
+              <img src="Gallery/Keluarga.jpeg" class="card-img-top" alt="Gallery 1" />
               <div class="card-body">
-                <p class="card-text">Pekan Raya Karawang, Jl. Galuh Mas Raya, Sukaharja, Kec. Telukjambe, Kabupaten Karawang, Jawa Barat.</p>
+                <p class="card-text">Pantai Lampuuk Aceh, Meunasah Lambaro, Kec. Lhoknga, Kabupaten Aceh Besar, Aceh.</p>
               </div>
             </div>
           </div>
@@ -215,7 +215,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
     <script>
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbyZjyCoGkwa4An75tWQS9szhrz0by4y2BTyfsY37CaJ4fkhD0PjfggDiBQer4O2fVgC/exec';
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbzmjG4L9z-Unq5HdmWA_23ooMIbHMB2J3b638MaxrfVz_SfnhkZUgqAS6xSkVnCORds/exec';
       const form = document.forms['wpu-contact-form'];
       const btnKirim = document.querySelector('.btn-kirim');
       const btnLoading = document.querySelector('.btn-loading');
@@ -238,7 +238,9 @@
             form.reset();
             console.log('Success!', response);
           })
-          .catch((error) => console.error('Error!', error.message));
+          .catch((error) => {
+            console.error('There was an error!', error);
+          });
       });
     </script>
   </body>
